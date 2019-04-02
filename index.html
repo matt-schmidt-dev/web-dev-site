@@ -41,31 +41,31 @@
       <img src="images/Matt Travis Profile Photo.jpg" alt="my-avatar">
       <h1>Hi, I'm <span>Matt Schmidt</span>!<br>Web Developer, Social Media Manager, & Mentor.</h1>
       <div class="header-buttons">
-        <button type="button" class="btn btn-dark button-edit-small">FREE CONSULTATION</button>
-        <button type="button" class="btn btn-dark button-edit-small">VIEW MY PORTFOLIO</button>
+        <a class="btn btn-outline-light" href="#contact" role="button">FREE CONSULTATION</a>
+        <a class="btn btn-outline-light" href="#portfolio" role="button">VIEW PORTFOLIO</a>
       </div>
     </div>
   </div>
   <div id="about" class="middle-section">
     <h1>ABOUT</h1>
-        <div class="web-services">
-          <div class="ind-service s1">
-            <img src="images/wordpress.png" alt="Wordpress Icon">
-            <h3>Wordpress Services</h3>
-            <ul>
-              <li>Build Wordpress Site.</li>
-              <li>Find applicable plugins and widgets.</li>
-              <li>Do other things that are needed.</li>
-            </ul>
-          </div>
-          <div class="ind-service s2">
-            <img src="https://image.flaticon.com/icons/svg/865/865136.svg" alt="Social Media Icon">
-            <h3>Social Media Marketing</h3>
-          </div>
-          <div class="ind-service s3">
-            <img src="https://image.flaticon.com/icons/svg/1150/1150575.svg" alt="SEO Icon">
-            <h3>SEO & Google Analytics</h3>
-          </div>
+    <div class="web-services">
+      <div class="ind-service s1">
+        <img src="images/wordpress.png" alt="Wordpress Icon">
+        <h3>Wordpress Services</h3>
+        <ul>
+          <li>Build Wordpress Site.</li>
+          <li>Find applicable plugins and widgets.</li>
+          <li>Do other things that are needed.</li>
+        </ul>
+      </div>
+      <div class="ind-service s2">
+        <img src="https://image.flaticon.com/icons/svg/865/865136.svg" alt="Social Media Icon">
+        <h3>Social Media Marketing</h3>
+      </div>
+      <div class="ind-service s3">
+        <img src="https://image.flaticon.com/icons/svg/1150/1150575.svg" alt="SEO Icon">
+        <h3>SEO & Google Analytics</h3>
+      </div>
     </div>
     <div class="languages">
       <div class="lang-box">
@@ -119,35 +119,70 @@
     </div>
     <div class="grid-portfolio">
       <div class="grid-portfolio-item one">
-        <h2>Wordpress Theme Blog</h2>
+        <div class="overlay overlay-one">
+          <h4>Wordpress Blog Site</h4>
+          <p>Wordpress blog site using a premium theme and customized with plugins, widgets, CSS styles, etc.</p>
+          <div class="overlay-icons">
+            <a class="btn btn-outline-dark" href="thekingsrights.html" role="button">LEARN MORE</a>
+          </div>
+        </div>
       </div>
       <div class="grid-portfolio-item two">
-        <h2>Custom Wordpress Site</h2>
+        <div class="overlay overlay-two">
+          <h4>Custom Wordpress Theme</h4>
+          <p>Fully custom PHP Wordpress theme with a static front-page and dynamic blog page, styled with CSS and optimized with Javascript.</p>
+          <div class="overlay-icons">
+            <a class="btn btn-outline-dark" href="grennslugg.html" role="button">LEARN MORE</a>
+          </div>
+        </div>
       </div>
       <div class="grid-portfolio-item three">
-        <h2>Interactive Timeline Site</h2>
-        <p>Another blog site for client.</p>
+        <div class="overlay overlay-three">
+          <h4>Custom Reality Site</h4>
+          <p>Wordpress site using a premium theme and customized with plugins, widgets, CSS styles, etc.</p>
+          <div class="overlay-icons">
+            <a class="btn btn-outline-dark" href="#contact" role="button">LEARN MORE</a>
+          </div>
+        </div>
       </div>
       <div class="grid-portfolio-item four">
-        <h2>Custom Wordpress Realtor Site</h2>
-        <p>Site for client to redirect to content and blog.</p>
+        <div class="overlay overlay-four">
+          <h4>Wordpress Blog Site</h4>
+          <p>Wordpress site using a premium theme and customized with plugins, widgets, CSS styles, etc.</p>
+          <div class="overlay-icons">
+            <a class="btn btn-outline-dark" href="#contact" role="button">LEARN MORE</a>
+          </div>
+        </div>
       </div>
       <div class="grid-portfolio-item five">
-        <h2>Timeline Site</h2>
-        <p>The King's Rights wesite/blog.</p>
+        <div class="overlay overlay-five">
+          <h4>Wordpress Blog Site</h4>
+          <p>Wordpress site using a premium theme and customized with plugins, widgets, CSS styles, etc.</p>
+          <div class="overlay-icons">
+            <a class="btn btn-outline-dark" href="#contact" role="button">LEARN MORE</a>
+          </div>
+        </div>
       </div>
       <div class="grid-portfolio-item six">
-        <h2>Timeline Site</h2>
-        <p>The King's Rights wesite/blog.</p>
+        <div class="overlay overlay-six">
+          <h4>Wordpress Blog Site</h4>
+          <p>Wordpress site using a premium theme and customized with plugins, widgets, CSS styles, etc.</p>
+          <div class="overlay-icons">
+            <a class="btn btn-outline-dark" href="#contact" role="button">LEARN MORE</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div id="contact" class="lower-bottom-section">
-    <div class="contact-section">
-      <h1>We Can Help You!</h1>
-      <p>We can do the same for you. Feel free to explore and contact us when your ready!</p>
-      <button type="button" class="btn btn-dark">Message Us</button>
-    </div>
+    <h1>Contact</h1>
+    <p>We can do the same for you. Feel free to explore and contact us when your ready!</p>
+    <form class="contact-form" action="index.html">
+      <input type="text" name="Name" placeholder="Name" size="50" required>
+      <input type="email" name="Email" placeholder="Email" size="50" required>
+      <textarea type="text" name="Message" placeholder="Message" cols="51" rows="10" required></textarea>
+      <input type="submit" value="Send Message" class="btn btn-outline-dark">
+    </form>
   </div>
   <div class="footer-section bg-dark">
     <div class="social-media">

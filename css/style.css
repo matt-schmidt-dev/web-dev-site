@@ -25,6 +25,26 @@ label {
   margin: auto 20px;
 }
 
+form {
+
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+textarea {
+  display: block;
+  margin: 10px auto;
+  border-style: solid;
+  padding: 10px;
+  border-color: black;
+}
+
 /********************Class********************/
 
 .navbar {
@@ -219,8 +239,6 @@ label {
 
 .grid-portfolio-item {
   color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +246,6 @@ label {
   text-align: center;
   width: 400px;
   height: 300px;
-  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -239,13 +256,51 @@ background-position: center;
 background-blend-mode: initial;
 }
 
+.overlay-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.overlay-icons a {
+
+}
+
 .one {
   background-image: url('images-css/laptop-on-tables.png');
-  /*background-color: gray;*/
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  transition: all 0.25s ease-in-out
+}
+
+.overlay{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  color: #484848;
+  margin: auto;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all ease-in-out 250ms;
+}
+
+.overlay h4 {
+  margin: 0;
+}
+
+.overlay p {
+ margin: 5%;
+}
+
+.grid-portfolio-item:hover .overlay {
+  opacity: 1;
+  height: 100%;
 }
 
 .two {
@@ -292,23 +347,22 @@ background-blend-mode: initial;
 }
 
 .lower-bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 75%;height: auto;
+  min-height: 100vh;
+  margin: auto;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 .lower-bottom-section h1, .lower-bottom-section h3 {
   color: #484848;
-}
-
-
-.contact-section {
-  width: 75%;
-  height: auto;
-  margin: auto;
-  min-height: 100vh;
-  max-width: 800px;
-  text-align: center;
-  padding: 25px 0 25px 0;
 }
 
 .footer-section {
@@ -330,7 +384,6 @@ background-blend-mode: initial;
   width: 40px;
   margin: 5px 5px 5px 5px;
 }
-
 /********************ID********************/
 /********************Media****************/
 
