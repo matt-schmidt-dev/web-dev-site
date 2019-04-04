@@ -71,8 +71,8 @@ textarea {
   min-height: 500px;
   background-size: cover;
   background-position: center;
-  /**background-attachment: fixed;**/
   color: white;
+  background-image: url('images-css/laptop-on-tables.jpg');
   background-color: gray;
   background-blend-mode: multiply;
 }
@@ -186,8 +186,10 @@ textarea {
 .lang-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .lang-box h3 {
@@ -196,8 +198,8 @@ textarea {
 
 .lang-img-bg {
   background-color: orange;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border-width: 5px;
   border-radius: 50%;
   display: flex;
@@ -206,8 +208,9 @@ textarea {
 }
 
 .lang-img-bg img {
-  height: 35px;
+  height: 25px;
   width: auto;
+  margin:0;
 }
 
 .bottom-section {
@@ -365,6 +368,10 @@ background-blend-mode: initial;
   color: #484848;
 }
 
+.cf-two {
+  display: none;
+}
+
 .footer-section {
   height: 200px;
   padding: 10px;
@@ -398,25 +405,6 @@ background-blend-mode: initial;
 
 
 @media (max-width: 1000px) {
-
-  .flex-services {
-    flex-direction: column;
-    height: auto;
-    width: 100vw;
-    margin-left: 0px;
-    margin-right: 0px;
-
-  }
-
-  .flex-services-box {
-    width: 85vw;
-    min-width: 320px;
-    max-width: 400px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .grid-portfolio {
     margin: auto;
@@ -479,7 +467,7 @@ background-blend-mode: initial;
 @media (max-width: 850px) {
 
   .header-section-info {
-    top: 100px;
+
   }
 
   .social-media-icon {
@@ -496,18 +484,60 @@ background-blend-mode: initial;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 475px) {
 
-}
-
-@media (max-width: 525px) {
-  .h3-header-image {
-    font-size: 2.0rem;
-    font-weight: bold;
-    text-align: left;
-  }
-  .button-edit-small {
-    padding: 3px 6px;
+  .header-section-info h1 {
+    font-size: 2.0em;
   }
 
+  .btn {
+    font-size: 0.8em;
+  }
+
+  .grid-portfolio-item {
+    width: 90%;
+    height: 250px;
+    margin: auto;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .two {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .three {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .four {
+    display: none;
+  }
+
+  .five {
+    display: none;
+  }
+
+  .six {
+    display: none;
+  }
+
+  .cf-one {
+    display: none;
+  }
+
+  .cf-two {
+    display: block;
+  }
 }

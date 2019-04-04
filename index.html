@@ -36,7 +36,7 @@
       </ul>
     </div>
   </nav>
-  <div id="home" class="header-section parallax--bg" style="background-image: url('images/laptop-on-tables.jpg')">
+  <div id="home" class="header-section parallax--bg">
     <div class="header-section-info">
       <img src="images/Matt Travis Profile Photo.jpg" alt="my-avatar">
       <h1>Hi, I'm <span>Matt Schmidt</span>!<br>Web Developer, Social Media Manager, & Mentor.</h1>
@@ -73,42 +73,36 @@
           <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="">
         </div>
         <h3>HTML</h3>
-        <p>My skill level here.</p>
       </div>
       <div class="lang-box">
         <div class="lang-img-bg">
           <img src="https://image.flaticon.com/icons/svg/9/9299.svg" alt="">
         </div>
         <h3>CSS</h3>
-        <p>My skill level here.</p>
       </div>
       <div class="lang-box">
         <div class="lang-img-bg">
           <img src="images/php.png" alt="">
         </div>
         <h3>PHP</h3>
-        <p>My skill level here.</p>
       </div>
       <div class="lang-box">
         <div class="lang-img-bg">
           <img src="https://image.flaticon.com/icons/svg/919/919828.svg" alt="Javascript">
         </div>
         <h3>Javascript</h3>
-        <p>My skill level here.</p>
       </div>
       <div class="lang-box">
         <div class="lang-img-bg">
           <img src="https://image.flaticon.com/icons/svg/1/1975.svg" alt="">
         </div>
         <h3>BootStrap</h3>
-        <p>My skill level here.</p>
       </div>
       <div class="lang-box">
         <div class="lang-img-bg">
           <img src="https://image.flaticon.com/icons/svg/1/1975.svg" alt="">
         </div>
         <h3>jQuery</h3>
-        <p>My skill level here.</p>
       </div>
     </div>
   </div>
@@ -177,10 +171,16 @@
   <div id="contact" class="lower-bottom-section">
     <h1>Contact</h1>
     <p>We can do the same for you. Feel free to explore and contact us when your ready!</p>
-    <form class="contact-form" action="index.html">
-      <input type="text" name="Name" placeholder="Name" size="50" required>
+    <form class="contact-form cf-one" action="index.html">
+      <input type="text" name="Name" placeholder="Name" size="50"  required>
       <input type="email" name="Email" placeholder="Email" size="50" required>
       <textarea type="text" name="Message" placeholder="Message" cols="51" rows="10" required></textarea>
+      <input type="submit" value="Send Message" class="btn btn-outline-dark">
+    </form>
+    <form class="contact-form cf-two" action="index.html">
+      <input type="text" name="Name" placeholder="Name" size="35" required>
+      <input type="email" name="Email" placeholder="Email" size="35" required>
+      <textarea type="text" name="Message" placeholder="Message" cols="36" rows="10" required></textarea>
       <input type="submit" value="Send Message" class="btn btn-outline-dark">
     </form>
   </div>
@@ -203,12 +203,12 @@
       </a>
     </div>
   </div>
-  
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  
+
 </body>
 
 </html>
