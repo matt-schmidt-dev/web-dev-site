@@ -69,12 +69,12 @@ textarea {
 .header-section {
   height: 100vh;
   min-height: 500px;
-  background-size: cover;
-  background-position: center;
   color: white;
   background-image: url('images-css/laptop-on-tables.jpg');
   background-color: gray;
   background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
 }
 
 .parallax--bg {
@@ -469,7 +469,7 @@ background-blend-mode: initial;
   .header-section-info {
 
   }
-
+  
   .social-media-icon {
     margin: 5px 3px 5px 3px;
   }
@@ -485,6 +485,11 @@ background-blend-mode: initial;
 }
 
 @media (max-width: 475px) {
+
+  .header-section-info img {
+    width: 150px;
+    height: 150px;
+  }
 
   .header-section-info h1 {
     font-size: 2.0em;
