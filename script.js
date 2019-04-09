@@ -17,12 +17,20 @@ $(document).ready(function() {
 
   $('.scroll').click(function(e){
     e.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top});
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000 );
 });
 });
 
+$(document).ready(function(){
+  $('.nav-item').click(function(){
+    $('.nav-item').removeClass("active");
+    $(this).addClass("active");
+
+  });
+});
+
 //ACTIME LINK SWITCHING
-$(window).scroll(function() {
+/*$(window).scroll(function() {
   var scrollbarLocation = $(this).scrollTop();
 
   scrollLink.each(function() {
@@ -34,4 +42,4 @@ $(window).scroll(function() {
     }
   });
 
-});
+});*/

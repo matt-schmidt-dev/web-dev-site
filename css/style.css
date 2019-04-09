@@ -48,8 +48,8 @@ textarea {
 /********************Class********************/
 
 .navbar {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
   border-style: solid;
   border-width: 0 0 3px 0;
   border-color: white;
@@ -58,23 +58,33 @@ textarea {
 .edits-to-nav-heading {
   display: flex;
   margin-right: 0;
-  padding-top: 0;
+  padding: 0;
 }
 
-.remove-nav-padding {
-  padding-top: 0;
-  padding-bottom: 0;
+.logo {
+  margin: 5px;
+  flex-grow: 5;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  margin: auto 5px;
+  color: white;
+  flex-grow: 1;
+  font-size: 1.1em;
+}
+
+.active {
+
 }
 
 .header-section {
   height: 100vh;
   min-height: 500px;
   color: white;
-  background-image: url('images-css/laptop-on-tables.jpg');
-  background-color: gray;
-  background-blend-mode: multiply;
+  background-image: url('images-css/laptop-on-tables-dark.jpg');
   background-size: cover;
-  background-position: center;
 }
 
 .parallax--bg {
@@ -116,27 +126,6 @@ textarea {
   margin: 10px 10px 0 5px;
 }
 
-.logo {
-  margin: 0 25px 0 0;
-  flex-grow: 5;
-  justify-content: center;
-}
-
-.h3-large {
-  font-size: 0.75em;
-}
-
-.h3-small {
-  font-size: 0.65em;
-}
-
-.nav-item {
-  margin: auto 5px;
-  color: white;
-  flex-grow: 1;
-  font-size: 1.1em;
-}
-
 .middle-section {
   background-color: white;
   height: auto;
@@ -151,6 +140,12 @@ textarea {
 
 .middle-section h1, .middle-section h3 {
   color: #484848;
+}
+
+.title-line {
+  background-color: #484848;
+  height: 5px;
+  width: 70px;
 }
 
 .web-services {
@@ -176,11 +171,15 @@ textarea {
   margin: auto;
 }
 
+.tech-skills-title {
+
+}
+
 .languages {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  margin: 10px;
 }
 
 .lang-box {
@@ -188,12 +187,14 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 75px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .lang-box h3 {
-  font-size: 1.5em;
+  margin-top: 5px;
+  font-size: 1em;
 }
 
 .lang-img-bg {
@@ -225,11 +226,18 @@ textarea {
 }
 
 .portfolio-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: auto auto 0 auto;
   width: 60%;
   color: #484848;
+}
 
+.portfolio-heading p {
+  margin: 10px;
 }
 
 .grid-portfolio {
@@ -364,6 +372,10 @@ background-blend-mode: initial;
   text-align: center;
 }
 
+.lower-bottom-section p {
+  margin: 10px;
+}
+
 .lower-bottom-section h1, .lower-bottom-section h3 {
   color: #484848;
 }
@@ -469,7 +481,7 @@ background-blend-mode: initial;
   .header-section-info {
 
   }
-  
+
   .social-media-icon {
     margin: 5px 3px 5px 3px;
   }
