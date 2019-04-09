@@ -84,6 +84,7 @@ textarea {
   min-height: 500px;
   color: white;
   background-image: url('images-css/laptop-on-tables-dark.jpg');
+  background-position: center;
   background-size: cover;
 }
 
@@ -233,7 +234,7 @@ textarea {
 }
 
 .lang-img-bg {
-  background-color: orange;
+  background-color: OrangeRed;
   width: 50px;
   height: 50px;
   border-width: 5px;
@@ -372,7 +373,7 @@ background-blend-mode: initial;
 
 .four {
   /*background-image: url('images-css/TKRSS.png');*/
-  background-color: orange;
+  background-color: OrangeRed;
   grid-column-start:1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -402,6 +403,7 @@ background-blend-mode: initial;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: white;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 75%;height: auto;
