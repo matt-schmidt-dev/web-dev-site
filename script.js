@@ -29,17 +29,15 @@ $(document).ready(function(){
   });
 });
 
-//ACTIME LINK SWITCHING
-/*$(window).scroll(function() {
-  var scrollbarLocation = $(this).scrollTop();
 
-  scrollLink.each(function() {
+$(document).ready(function(){
 
-    var sectionOffset = (this.hash).offset().top;
+  var controller = new ScrollMagic.Controller();
 
-    if (sectionOffset <= scrollbarLocation ) {
-      $(this).parent().addClass('active');
-    }
-  });
-
-});*/
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '.fade-in',
+    reverse: false
+  })
+    .setClassToggle('.fade-in', 'show')
+    .addClass(controller);
+});
