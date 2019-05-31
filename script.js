@@ -1,5 +1,4 @@
 //PARALLAX
-
 $(window).scroll(function() {
   parallax();
 });
@@ -12,7 +11,7 @@ function parallax() {
 }
 
 
-
+//Smooth Scrolling
 $(document).ready(function() {
 
   $('.scroll').click(function(e){
@@ -21,6 +20,8 @@ $(document).ready(function() {
 });
 });
 
+
+//Highlight Page Links
 $(document).ready(function(){
   $('.nav-item').click(function(){
     $('.nav-item').removeClass("active");
@@ -30,14 +31,8 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-
-  var controller = new ScrollMagic.Controller();
-
-  var ourScene = new ScrollMagic.Scene({
-    triggerElement: '.fade-in',
-    reverse: false
-  })
-    .setClassToggle('.fade-in', 'show')
-    .addClass(controller);
+//Grid Links
+$(".grid-portfolio-item").click(function() {
+  window.location = $(this).find("a").attr("href");
+  return false;
 });

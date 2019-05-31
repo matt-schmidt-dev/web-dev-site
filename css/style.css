@@ -97,7 +97,7 @@ textarea {
   min-height: 500px;
   color: white;
   background-image: url('images-css/laptop-on-tables-dark.jpg');
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
@@ -125,7 +125,18 @@ textarea {
   font-size: 3.5em;
 }
 
-.header-section-info h1 span {
+.social-media-header {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5px;
+}
+
+.social-media-icon-header {
+  height: 40px;
+  width: 40px;
+  margin: 5px 5px 5px 5px;
 }
 
 .middle-section {
@@ -133,7 +144,7 @@ textarea {
   height: auto;
   min-height: 100vh;
   max-width: 1200px;
-  margin: 25px auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,6 +310,7 @@ textarea {
 }
 
 .grid-portfolio-item {
+  cursor: pointer;
   color: white;
   display: flex;
   flex-direction: column;
@@ -392,7 +404,7 @@ background-blend-mode: initial;
 }
 
 .six {
-  background-image: url('images-css/greenslugg-grid.png');
+  background-image: url('images-css/new-project.png');
   grid-column-start:3;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -576,11 +588,6 @@ background-blend-mode: initial;
     font-size: 1.2em;
   }
 
-  .header-section-info img {
-    width: 150px;
-    height: 150px;
-  }
-
   .header-section-info h1 {
     font-size: 2.5em;
   }
@@ -659,7 +666,7 @@ background-blend-mode: initial;
 @media (max-width: 500px) {
 
   .ind-service p {
-    display: none;
+
   }
 
   .languages {
