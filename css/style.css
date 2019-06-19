@@ -294,7 +294,7 @@ textarea {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto auto 0 auto;
+  margin: 0 auto;
   width: 60%;
   color: #484848;
 }
