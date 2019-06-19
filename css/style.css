@@ -281,9 +281,11 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
   min-height: 100vh;
+  margin: auto;
 }
 
 .portfolio-heading {
@@ -304,9 +306,11 @@ textarea {
 .grid-portfolio {
   display: grid;
   grid-gap: 5px;
-  margin: 25px auto auto auto;
+  margin: 5px auto;
   justify-content: center;
   align-content: center;
+  max-width: 1250px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-portfolio-item {
@@ -317,7 +321,6 @@ textarea {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 400px;
   height: 300px;
   background-size: cover;
   background-position: top;
@@ -329,18 +332,8 @@ background-position: center;
 background-blend-mode: initial;
 }
 
-.overlay-icons {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-}
-
 .one {
   background-image: url('images-css/duino-front-page.png');
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .overlay{
@@ -373,42 +366,23 @@ background-blend-mode: initial;
 
 .two {
   background-image: url('images-css/blog-site-media-desktop.png');
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+
 }
 
 .three {
   background-image: url('images-css/magic-site-desktop.png');
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .four {
   background-image: url('images-css/blog-site-media-logo.png');
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .five {
   background-image: url('images-css/greenslugg-grid.png');
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .six {
-  background-image: url('images-css/new-project.png');
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  background-image: url('images-css/realtor-site-desktop.png');
 }
 
 .lower-bottom-section {
@@ -464,60 +438,15 @@ background-blend-mode: initial;
 @media (max-width: 1250px) {
 
   .grid-portfolio {
-    margin: auto;
-    width: auto;
   }
 
   .grid-portfolio-item {
-    width: 300px;
-    height: 225px;
+    height: 250px;
   }
 
   .grid-portofolio-item:hover {
   background-position: center;
   background-blend-mode: initial;
-  }
-
-  .one {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .two {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .three {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .four {
-    grid-column-start:1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .five {
-    grid-column-start:2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .six {
-    grid-column-start:3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
   }
 }
 
@@ -561,12 +490,13 @@ background-blend-mode: initial;
 
   .grid-portfolio-item {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 
   .grid-portfolio {
     margin-left: 5px;
     margin-right: 5px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .overlay h4 {
@@ -608,50 +538,16 @@ background-blend-mode: initial;
     height: 50px;
   }
 
+  .grid-portfolio {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-portfolio-item {
+    height: 350px;;
+  }
+
   .btn {
     font-size: 0.8em;
-  }
-
-  .one {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .two {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .three {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .four {
-    grid-column-start:2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .five {
-    grid-column-start:1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .six {
-    grid-column-start:2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
   }
 
   .cf-one {
@@ -665,8 +561,16 @@ background-blend-mode: initial;
 
 @media (max-width: 500px) {
 
-  .ind-service p {
+.header-section-info {
+  max-width: 95%;
+}
 
+.header-section-info h1 {
+  font-size: 2.3em;
+}
+
+
+  .ind-service p {
   }
 
   .languages {
@@ -687,7 +591,7 @@ background-blend-mode: initial;
   }
 
   .grid-portfolio-item {
-    height: 165px;
+    height: 275px;
   }
 
   .overlay h4 {

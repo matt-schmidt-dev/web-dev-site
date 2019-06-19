@@ -30,9 +30,9 @@ $(document).ready(function(){
   });
 });
 
-
+/*
 //Grid Links
 $(".grid-portfolio-item").click(function() {
   window.location = $(this).find("a").attr("href");
   return false;
-});
+});*/
