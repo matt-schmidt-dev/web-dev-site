@@ -336,6 +336,100 @@ background-blend-mode: initial;
   background-image: url('images-css/duino-front-page.png');
 }
 
+.popup-video-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.85)
+}
+
+.pop-one {
+  display: none;
+}
+
+.popup-video-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E0E0E0;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  width: 700px;
+  height: 500px;
+  box-shadow: -3px 3px 5px black;
+}
+
+.popup-video-container iframe {
+  margin: auto;
+  align-content: center;
+  width: 540px;
+  height: 305px;
+  box-shadow: -3px 3px 5px black;
+}
+
+.pop-two {
+  display: none;
+}
+
+.pop-three {
+  display: none;
+}
+
+.pop-four {
+  display: none;
+}
+
+.pop-five {
+  display: none;
+}
+
+.pop-six {
+  display: none;
+}
+
+.pop-active {
+  display: flex;
+}
+
+.iframe-port {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit-pop {
+  margin: 15px 10px 0 auto;
+  cursor: pointer;
+}
+
+.x-line-1-pop {
+  width: 31px;
+	height: 2px;
+	background-color: black;
+	margin-bottom: 20px;
+  transform: rotate(45deg);
+  transform-origin: 0%;
+}
+
+.x-line-2-pop {
+  width: 31px;
+	height: 2px;
+	background-color: black;
+	margin-top: 0;
+  transform: rotate(-45deg);
+  transform-origin: 0%;
+}
+
 .overlay{
   overflow: hidden;
   display: flex;
@@ -373,12 +467,13 @@ background-blend-mode: initial;
   background-image: url('images-css/magic-site-desktop.png');
 }
 
-.four {
-  background-image: url('images-css/blog-site-media-logo.png');
+.four{
+  background-image: url('images-css/logo-collage.png');
+  background-position: center;
 }
 
 .five {
-  background-image: url('images-css/greenslugg-grid.png');
+  background-image: url('images-css/dog-walking-site.png');
 }
 
 .six {
@@ -414,7 +509,6 @@ background-blend-mode: initial;
 }
 
 .footer-section {
-  height: 200px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -442,11 +536,6 @@ background-blend-mode: initial;
 
   .grid-portfolio-item {
     height: 250px;
-  }
-
-  .grid-portofolio-item:hover {
-  background-position: center;
-  background-blend-mode: initial;
   }
 }
 
@@ -499,17 +588,6 @@ background-blend-mode: initial;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .overlay h4 {
-    font-size: 1.3em;
-  }
-
-  .overlay p {
-   font-size: 0.9em;
-  }
-
-  .overlay-icons button {
-    font-size: 0.9em;
-  }
 }
 
 @media (max-width: 700px) {
@@ -546,8 +624,15 @@ background-blend-mode: initial;
     height: 350px;;
   }
 
-  .btn {
-    font-size: 0.8em;
+  .popup-video-container {
+    width: 500px;
+    height: 300px;
+  }
+
+  .popup-video-container iframe {
+    width: 450px;
+    height: 220px;
+    box-shadow: 2px 2px 3px black;
   }
 
   .cf-one {
@@ -594,16 +679,18 @@ background-blend-mode: initial;
     height: 275px;
   }
 
-  .overlay h4 {
-    font-size: 1.1em;
+  .popup-video-container {
+    width: 360px;
+    height: 250px;
   }
 
-  .overlay p {
-   font-size: 0.75em;
+  .popup-video-container iframe {
+    width: 340px;
+    height: 190px;
   }
 
-  .overlay-icons button {
-    font-size: 0.9em;
+  .btn {
+    font-size: 0.8em;
   }
 
 }
