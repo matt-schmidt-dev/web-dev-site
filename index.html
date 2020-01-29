@@ -7,14 +7,14 @@
   <link rel="icon" type="img/jpg" href="images/profilesmall.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lora|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <a class="navbar-brand edits-to-nav-heading" href="">
-      <h1 class="logo">MATT SCHMIDT</h1>
+      <img class="head-logo-img" src="images/MattSchmidtTech.png" class="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,8 +37,9 @@
     </div>
   </nav>
   <div id="home" class="header-section parallax--bg">
+      <div id="header-section-overlay"></div>
     <div class="header-section-info">
-      <h1>Hi, I'm <span>Matt Schmidt</span>!<br>I'm a Web Developer.</h1>
+      <h1 class="head-sect-info-h1">Hi, I'm <span>Matt Schmidt</span>.<br>I'm a Web Developer.</h1>
       <div class="header-buttons">
         <a class="btn btn-outline-light scroll" href="#contact" role="button">CONTACT ME NOW</a>
         <a class="btn btn-outline-light scroll" href="#portfolio" role="button">VIEW PORTFOLIO</a>
@@ -57,190 +58,433 @@
     </div>
   </div>
   <div id="about" class="middle-section">
-    <h1>ABOUT</h1>
-    <div class="title-line">
-    </div>
-    <div class="about-and-services">
-      <div class="web-services">
-        <div class="ind-service s1">
-          <img src="https://image.flaticon.com/icons/svg/253/253822.svg" alt="Wordpress Icon">
-          <h3>Wordpress</h3>
-          <p>Develop a custom theme or edit the code of a current site.</p>
-        </div>
-        <div class="ind-service s2">
-          <img src="https://image.flaticon.com/icons/svg/993/993791.svg" alt="Social Media Icon">
-          <h3>Fully Custom</h3>
-          <p>Fully custom HTML sites that don't rely on a CMS, like Wordpress.</p>
-        </div>
-        <div class="ind-service s3">
-          <img src="https://image.flaticon.com/icons/svg/181/181820.svg" alt="SEO Icon">
-          <h3>Responsive</h3>
-          <p>My sites work on any device - smartphones, tablets, & desktops.</p>
-        </div>
-        <div class="ind-service s4">
-          <img src="https://image.flaticon.com/icons/svg/1508/1508774.svg" alt="Social Media Icon">
-          <h3>Interactive</h3>
-          <p>Sites that result in pleasant and easy user experience.</p>
-        </div>
-      </div>
-      <div class="about-image-description">
-        <img src="images/Matt Travis Profile Photo.jpg" alt="my-avatar">
-        <p>My projects include creating both custom HTML websites and custom Wordpress themes. A lot of my projects are from scratch, but I also use frameworks like bootstrap, slick slider, and others to help when needed. I like to create sites that
-          are user friendly and use aninmations to help bring attention to the most important information.</p>
-      </div>
-    </div>
-    <h3 class="tech-skills-title">Technical Skills</h3>
-    <div class="languages">
+      
+      
+      <div class="upper-mid-sect">
+         
       <div class="lang-box">
-        <div class="lang-img-bg">
-          <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="">
-        </div>
-        <h3>HTML</h3>
+          <img src="https://image.flaticon.com/icons/svg/174/174854.svg" alt="">
+        <h5>HTML</h5>
       </div>
       <div class="lang-box">
-        <div class="lang-img-bg">
-          <img src="https://image.flaticon.com/icons/svg/9/9299.svg" alt="">
-        </div>
-        <h3>CSS</h3>
+          <img src="https://image.flaticon.com/icons/svg/732/732190.svg" alt="">
+        <h5>CSS</h5>
       </div>
       <div class="lang-box">
-        <div class="lang-img-bg">
-          <img src="https://image.flaticon.com/icons/svg/1/1975.svg" alt="">
-        </div>
-        <h3>PHP</h3>
+          <img src="https://image.flaticon.com/icons/svg/919/919828.svg" alt="">
+        <h5>Javascript</h5>
       </div>
       <div class="lang-box">
-        <div class="lang-img-bg">
-          <img src="images/JS-icon.png" alt="Javascript">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png" alt="">
+        <h5>BootStrap</h5>
         </div>
-        <h3>Javascript</h3>
+      <div class="lang-box">
+          <img src="https://www.logolynx.com/images/logolynx/2a/2ab4daf7454eef5b0f564a00ed616a7d.png" alt="">
+        <h5>jQuery</h5>
       </div>
       <div class="lang-box">
-        <div class="lang-img-bg">
-          <img src="images/bootstrap.jpg" alt="">
-        </div>
-        <h3>BootStrap</h3>
+          <img src="https://image.flaticon.com/icons/svg/919/919830.svg" alt="">
+        <h5>PHP</h5>
+      </div>
+        <div class="lang-box">
+          <img src="https://image.flaticon.com/icons/svg/733/733553.svg" alt="">
+        <h5>Git/GitHub</h5>
       </div>
       <div class="lang-box">
-        <div class="lang-img-bg">
-          <img src="images/jquery.png" alt="">
-        </div>
-        <h3>jQuery</h3>
+          <img src="https://image.flaticon.com/icons/svg/174/174881.svg" alt="Javascript">
+        <h5>Wordpress</h5>
       </div>
-    </div>
+      <div class="lang-box">
+          <img src="https://image.flaticon.com/icons/svg/552/552255.svg" alt="">
+        <h5>Photoshop</h5>
+      </div>
+      <div class="lang-box">
+          <img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" alt="">
+        <h5>Google Analytics</h5>
+      </div>
+      <div class="lang-box">
+          <img src="https://image.flaticon.com/icons/svg/1055/1055645.svg" alt="">
+        <h5>SEO</h5>
+      </div>
+      <div class="lang-box">
+          <img src="https://cdn-backlinko.pressidium.com/wp-content/uploads/2018/05/0_0_google-search-console-1.png" alt="Javascript">
+        <h5>Search Console</h5>
+      </div>
+          
+      </div>
+      
+      <div class="inner-mid-sect">
+          
+      <div class="about-me">
+          <h2 class="about-me-head-2">About My Work</h2>
+          <div class="title-line about-me-title-line"></div>
+          <h3 class="about-me-head-3">My experience & skills as a web developer....</h3>
+          <div class="about-img-descript">
+            <img id="about-profile-photo" src="images/profile-pic.jpg">
+            <p>I'm a <span class="abt-img-descript-bold">Web Developer</span> in the Dallas, TX area, who creates sites that are 
+            <span class="abt-img-descript-bold">fast, user friendly, interactive, & responsive</span>. My projects consist of custom <span class="abt-img-descript-bold">HTML & PHP websites</span>, as well as 
+            custom <span class="abt-img-descript-bold">Wordpress themes built from scratch</span>.</p>
+            <p>I've worked with common <span class="abt-img-descript-bold">front-end</span> frameworks like <span class="abt-img-descript-bold">bootstrap & <span class="aidb-minus-cap">jQuery</span></span>, 
+            and I'm quick and efficient with <span class="abt-img-descript-bold">CSS & JavaScript</span>. I've also worked with <span class="abt-img-descript-bold">JavaScript APIs</span> like the 
+            <span class="abt-img-descript-bold">YouTube</span> and <span class="abt-img-descript-bold">Google Maps APIs</span>. On the <span class="abt-img-descript-bold">back-end</span>, I've worked 
+            regularly with <span class="abt-img-descript-bold">PHP</span> to improve site organization and functionality in both <span class="abt-img-descript-bold">cPanel</span> and <span 
+            class="abt-img-descript-bold">Wordpress</span>.</p>
+            <p>Also, I'm familiar with technologies and have skills that supplement web development, such as: simple <span class="abt-img-descript-bold">logo & graphic design</span> via <span 
+            class="abt-img-descript-bold">Photoshop</span>; a good understanding of <span class="abt-img-descript-bold">Google Search Console</span> and <span class="abt-img-descript-bold">best 
+            SEO practices</span>; and knowledge of web traffic concepts via <span class="abt-img-descript-bold">Google Analytics</span>.</p>
+          </div>
+      </div>
+      
+      <div class="my-tech-skills">
+          
+          <div class="ind-tech-skill">
+              <div class="its-img-head">
+                <img src="images/time.png" alt="Wordpress Icon">
+                <h4>Fast Load Times</h4>
+              </div>
+              <p class="its-descript">Writing clean code and making neccessay adjustments to things like image size is a very high 
+              priority. This helps decrease load times and increase traffic and retention.</p>
+          </div>
+
+          <div class="ind-tech-skill">
+              <div class="its-img-head">
+                <img src="images/lap-tab-phone-icon-white.png" alt="Wordpress Icon">
+                <h4>Responsive Design</h4>
+              </div>
+              <p class="its-descript">All of my websites are designed to work on desktops, tablets, & smart-phones. Whether the 
+              device is in landscape or protrait mode, it will look and work flawlessly.</p> 
+          </div>
+          
+          <div class="ind-tech-skill">
+              <div class="its-img-head">
+                <img src="images/gear.png" alt="Wordpress Icon">
+                <h4>User-Friendly Interface</h4>
+              </div>
+              <p class="its-descript">It is of utmost importance for sites to be user-friendly in order to convert visitors to 
+              customers. My sites are developed with my clients' customers in mind.</p>
+          </div>
+          
+          <div class="ind-tech-skill">
+              <div class="its-img-head">
+                <img src="images/interactive-icon-white.png" alt="Wordpress Icon">
+                <h4>Interactive Features</h4>
+              </div>
+              <p class="its-descript">Site visitors need to be able to quickly find the information, products, and/or services they 
+              need. My sites' interactive features guide my clients' customers in the right direction.</p>
+          </div>
+          
+      </div>
+      
+      </div>
+      
+    
   </div>
   <div id="portfolio" class="bottom-section">
     <div class="portfolio-heading">
-      <h1>Portfolio</h1>
-      <div class="title-line">
+        <div class="port-head-one">
+      <h2 class="port-head-h2">Latest Projects</h2>
+      <div class="title-line port-head-title-line">
       </div>
-      <p>Here's Some of the Website Development Projects I'm Currently Working On.</p>
+      <h3 class="port-head-h3">My Latest Web Development Projects....</h3>
+      </div>
+      <div class="port-head-two">
+          <h6>Each project has links to both the live-site & GitHub. You'll find simple HTML sites, 
+          multi-page PHP sites, 100% custom Wordpress theme builds, & JavaScript web apps.</h6>
+      </div>
     </div>
     <div class="grid-portfolio">
       <div class="grid-portfolio-item one">
         <div class="overlay overlay-one">
-          <h4>Custom HTML Site</h4>
-          <p class="overlay-para">Developed creative custom HTML site that is interactive and user friendly, using jQuery & CSS.</p>
+          <h4>PHP Realtor Site</h4>
+          <p class="overlay-para">Custom PHP site that is interactive and user friendly. Main features include: Google Maps Javascript API app, 'Slick Slider' jQuery plugin, & contact/email-subscription forms. </p>
           <div class="btn-group" role="group" aria-label="Basic example">
-            <a role="button" class="btn btn-outline-dark" href="https://github.com/matts0809/coffee-site">GitHub</a>
-            <a role="button" class="btn btn-outline-dark" href="https://matts0809.github.io/coffee-site">Live-Site</a>
-            <a role="button" class="btn btn-outline-dark" href="">Demo-Vid</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://github.com/matts0809/realtor-site">GitHub</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://janethartmanschmidt.com">Live-Site</a>
+            <!-- <span role="button" class="btn btn-outline-dark pop-one-btn">Demo-Vid</span> -->
           </div>
         </div>
       </div>
       <div class="grid-portfolio-item two">
         <div class="overlay overlay-two">
-          <h4>Custom Wordpress Blog</h4>
-          <p class="overlay-para">Developed fully custom Wordpress blog theme from scratch, using PHP, CSS, & jQuery.</p>
+          <h4>Custom Wordpress Tech Blog</h4>
+          <p class="overlay-para">Fully custom Wordpress blog from scratch (NOT a pre-built theme). Main features include: if/while loops for posts, YouTube JavaScript API app, & YouTube JavaScript API video carousel.</p>
           <div class="btn-group" role="group" aria-label="Basic example">
-            <a role="button" class="btn btn-outline-dark" href="https://github.com/matts0809/blog-site">GitHub</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Live-Site</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Demo-Vid</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://github.com/matts0809/blog-site">GitHub</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://thetechblog.site">Live-Site</a>
+            <!-- <span role="button" class="btn btn-outline-dark pop-two-btn">Demo-Vid</span> -->
           </div>
         </div>
       </div>
       <div class="grid-portfolio-item three">
         <div class="overlay overlay-three">
-          <h4>Custom Interactive Site</h4>
+          <h4>Interactive HTML Site</h4>
           <p class="overlay-para">Developed creative custom site with many smooth animations, using HTML, CSS, & jQuery.</p>
           <div class="btn-group" role="group" aria-label="Basic example">
-            <a role="button" class="btn btn-outline-dark" href="https://github.com/matts0809/magic-site">GitHub</a>
-            <a role="button" class="btn btn-outline-dark" href="https://ryanmadler.com">Live-Site</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Demo-Vid</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://github.com/matts0809/magic-site">GitHub</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://ryanmadler.com">Live-Site</a>
+            <!-- <span role="button" class="btn btn-outline-dark pop-three-btn">Demo-Vid</span> -->
           </div>
         </div>
       </div>
       <div class="grid-portfolio-item four">
         <div class="overlay overlay-four">
-          <h4>Logo Design</h4>
-          <p class="overlay-para">Here's an example of logo design that I created for a client using Photoshop.</p>
-          <!--<div class="btn-group" role="group" aria-label="Basic example">
-            <a role="button" class="btn btn-outline-dark" href="https://">GitHub</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Live-Site</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Demo-Vid</a>
-          </div>-->
+          <h4>Custom Wordpress Dog-Walker Site</h4>
+          <p class="overlay-para">Custom Wordpress theme built from scratch (NOT a pre-built theme). Main features include: PHP custom fields for easy edits, image collage using display grid, & contact/email-subscription forms.</p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://github.com/matts0809/dog-walker-site">GitHub</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://dogsofnorthtexas.com">Live-Site</a>
+            <!-- <span role="button" class="btn btn-outline-dark pop-four-btn">Demo-Vid</span> -->
+          </div>
         </div>
       </div>
       <div class="grid-portfolio-item five">
         <div class="overlay overlay-five">
-          <h4>Custom Wordpress Site</h4>
-          <p class="overlay-para">Custom Wordpress theme built with PHP, CSS, & Bootstrap, and optimized with plugins.</p>
+          <h4>PHP Coffee Shop Site</h4>
+          <p class="overlay-para">Custom site for a local coffee shop, using PHP, CSS, & jQuery. Main features include: embedded Google Maps, 'Slick Slider' jQuery plugin, & client CMS for adding events.</p>
           <div class="btn-group" role="group" aria-label="Basic example">
-            <a role="button" class="btn btn-outline-dark" href="https://github.com/matts0809/GreenSlugg">GitHub</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Live-Site</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Demo-Vid</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://github.com/matts0809/coffee-site">GitHub</a>
+            <a role="button" target="_blank" class="btn btn-outline-dark" href="https://coffeeplace.site">Live-Site</a>
+            <!-- <span role="button" class="btn btn-outline-dark pop-five-btn">Demo-Vid</span> -->
           </div>
         </div>
       </div>
       <div class="grid-portfolio-item six">
         <div class="overlay overlay-six">
-          <h4>Newest Project!</h4>
-          <p class="overlay-para">HTML site with multiple parallax, animations, & smooth scrolling, using CSS & jQuery.</p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <a role="button" class="btn btn-outline-dark" href="https://github.com/matts0809/realtor">GitHub</a>
-            <a role="button" class="btn btn-outline-dark" href="https://janetandcecilschmidt.com">Live-Site</a>
-            <a role="button" class="btn btn-outline-dark" href="https://">Demo-Vid</a>
-          </div>
+          <h4>Logo Design</h4>
+          <p class="overlay-para">Here's some examples of logo designs that I created for clients using Photoshop.</p>
+          <span role="button" class="btn btn-outline-dark pop-six-btn">See More</span>
         </div>
       </div>
     </div>
   </div>
   <div id="contact" class="lower-bottom-section">
-    <h1>Contact</h1>
-    <div class="title-line">
+    <div class="inner-low-btm-sect">
+    <div id="contact-form-area">
+    <h2 class="cfa-h2">Send Message</h2>
+    <div class="title-line cfa-title-line">
     </div>
-    <p>Feel Free to Contact Me via the Contact Form Below!</p>
+    <h3 class="cfa-h3">Fill Out the Contact Form Below to Send Me a Message....</h3>
     <form class="contact-form cf-one" action="https://formspree.io/westonmediaco@gmail.com" method="POST">
       <input type="text" name="Name" placeholder="Name" size="50" required>
       <input type="email" name="Email" placeholder="Email" size="50" required>
-      <textarea type="text" name="Message" placeholder="Message" cols="51" rows="10" required></textarea>
-      <input type="submit" value="Send Message" class="btn btn-outline-dark">
+      <textarea type="text" name="Message" placeholder="Message" cols="50" rows="5" required></textarea>
+      <input type="submit" value="Send Message" class="btn btn-outline-light">
     </form>
     <form class="contact-form cf-two" action="https://formspree.io/westonmediaco@gmail.com" method="POST">
       <input type="text" name="Name" placeholder="Name" size="35" required>
       <input type="email" name="Email" placeholder="Email" size="35" required>
-      <textarea type="text" name="Message" placeholder="Message" cols="35" rows="10" required></textarea>
-      <input type="submit" value="Send Message" class="btn btn-outline-dark">
+      <textarea type="text" name="Message" placeholder="Message" cols="35" rows="5" required></textarea>
+      <input type="submit" value="Send Message" class="btn btn-outline-light">
     </form>
-  </div>
-  <div class="footer-section bg-dark">
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/matt-schmidt-tech/">
-        <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/145/145807.svg" alt="my-linedin">
-      </a>
-      <a href="https://github.com/matts0809">
-        <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/733/733553.svg" alt="my-github">
-      </a>
-      <a href="mailto:matts0809@gmail.com">
-        <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/174/174306.svg" alt="my-email">
-      </a>
+    </div>
+    <div id="all-contact-info">
+        
+        <h2 class="aci-h2">Get In Touch</h2>
+        <div class="title-line aci-title-line"></div>
+        <div class="inner-aci">
+            
+            <h3 class="aci-h3">If you want to callaborate or need some work done....</h3>
+            
+            <div class="contact-info-ind">
+                <img src="images/phone.png">
+                <p>214-502-4532</p>
+            </div>
+            <div class="contact-info-ind">
+                <img src="images/mail.png">
+                <p>contact@mattschmidt.tech</p>
+            </div>
+            <div class="contact-info-ind">
+                <img src="images/pin.png">
+                <p>Dallas, TX (willing to relocate)</p>
+            </div>
+            
+        </div>
+        
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/matt-schmidt-tech/">
+                <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/145/145807.svg" alt="my-linedin">
+            </a>
+            <a href="https://github.com/matts0809">
+                <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/733/733553.svg" alt="my-github">
+            </a>
+            <a href="mailto:matts0809@gmail.com">
+                <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/174/174306.svg" alt="my-email">
+            </a>
+        </div>
+           
+    </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <div class="footer-section bg-dark">
+      <ul class="footer-nav-menu">
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+  </div>
+  
+  
+  
+  
+  
+  <div class="popup-video-bg pop-six">
+      <div class="outer-carousel-container">
+          <div class="exit-pop">
+                <div class="x-line-1-pop">
+
+                </div>
+                <div class="x-line-2-pop">
+
+                </div>
+            </div>
+          <div class="carousel">
+                <button class="carousel__button carousel__button--left">
+                    <img src="https://image.flaticon.com/icons/svg/271/271220.svg">
+                </button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                      <li class="carousel__slide car-slide-one current-slide">
+                          <img class="carousel__image" src="images/pand-logo-horz-draft-2.png">
+                      </li>
+                      <li class="carousel__slide car-slide-two">
+                          <img class="carousel__image" src="images/dnt-logo.jpg">
+                      </li>
+                      <li class="carousel__slide car-slide-three">
+                          <img class="carousel__image" src="images/ltp-logo-pod-final-flame-85-trans.png">
+                      </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--right">
+                    <img src="https://image.flaticon.com/icons/svg/271/271228.svg">
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </div>
+        </div>
+        
+    <!---<div class="popup-video-container"></div>--->
+    
+  </div>
+
+
+
+
+  <!--Popups for Portfolio Items-->
+
+    <!---
+  <div class="popup-video-bg pop-one" id="popup-video-iframe">
+    <div class="popup-video-container">
+      <div class="exit-pop">
+        <div class="x-line-1-pop">
+
+        </div>
+        <div class="x-line-2-pop">
+
+        </div>
+      </div>
+      <div class="pop-one-iframe-div">
+        <iframe class="iframe-port" id="pop-iframe" src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="popup-video-bg pop-two">
+    <div class="popup-video-container">
+      <div class="exit-pop">
+        <div class="x-line-1-pop">
+
+        </div>
+        <div class="x-line-2-pop">
+
+        </div>
+      </div>
+      <div class="pop-two-iframe-div">
+        <iframe src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="popup-video-bg pop-three">
+    <div class="popup-video-container">
+      <div class="exit-pop">
+        <div class="x-line-1-pop">
+
+        </div>
+        <div class="x-line-2-pop">
+
+        </div>
+      </div>
+      <div class="pop-three-iframe-div">
+        <iframe src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="popup-video-bg pop-four">
+    <div class="popup-video-container">
+      <div class="exit-pop">
+        <div class="x-line-1-pop">
+
+        </div>
+        <div class="x-line-2-pop">
+
+        </div>
+      </div>
+      <div class="pop-four-iframe-div">
+        <iframe src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="popup-video-bg pop-five">
+    <div class="popup-video-container">
+      <div class="exit-pop">
+        <div class="x-line-1-pop">
+
+        </div>
+        <div class="x-line-2-pop">
+
+        </div>
+      </div>
+      <div class="pop-five-iframe-div">
+        <iframe src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="popup-video-bg pop-six">
+    <div class="popup-video-container">
+      <div class="exit-pop">
+        <div class="x-line-1-pop">
+
+        </div>
+        <div class="x-line-2-pop">
+
+        </div>
+      </div>
+      <div class="pop-six-iframe-div">
+        <iframe src="https://www.youtube.com/embed/X4rU02088Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+    --->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+  
   <script src="script.js"></script>
+  
+  <script src="logo-slider.js"></script>
 
 </body>
 
